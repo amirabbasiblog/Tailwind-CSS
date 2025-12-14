@@ -48,6 +48,9 @@ module.exports = {
     // Images / Figures
     'w-full','h-auto','transition','duration-300','ease-in-out','hover:shadow-2xl','hover:scale-[1.01]',
 
+    // SVG Icons
+    'w-4','h-4','w-5','h-5','inline','mr-1','mr-2','-mt-0.5',
+
     // Containers / Wrappers
     'blogger-post-wrapper','article'
   ],
