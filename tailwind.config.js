@@ -27,7 +27,7 @@ module.exports = {
     'shadow-md','shadow-lg','shadow-2xl','hover:shadow-2xl','hover:shadow-lg',
 
     // Layout / Spacing
-    'p-1.5','p-3','p-4','p-5','p-6','p-8','p-10','sm:p-8',
+    'p-1.5','p-3','p-4','p-5','p-6','p-8','p-10','sm:p-8','sm:p-10',
     'pt-6','pb-2','pb-3','pb-4',
     'mt-2','mt-4','mt-6','mt-12','mb-2','mb-3','mb-4','mb-6','mb-8','mb-10',
     'mx-auto','ml-0','mr-1',
