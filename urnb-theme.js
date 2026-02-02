@@ -46,9 +46,4 @@ document.addEventListener("DOMContentLoaded", function () {
    Script Name: Auto Update Copyright Year
 ===================================================== */
 
-document.addEventListener("DOMContentLoaded", function () {
-  var yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.innerText = new Date().getFullYear();
-  }
-});
+document.getElementById(&quot;year&quot;).innerText = new Date().getFullYear();
