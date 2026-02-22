@@ -4,14 +4,14 @@
    Purpose: URL se ?m=1 remove karna (clean URL)
 ===================================================== */
 
-(function () {
-    var url = window.location.href;
+// (function () {
+//     var url = window.location.href;
 
-    if (url.indexOf('?m=1') !== -1) {
-        url = url.replace('?m=1', '');
-        window.history.pushState(null, null, url);
-    }
-})();
+//     if (url.indexOf('?m=1') !== -1) {
+//         url = url.replace('?m=1', '');
+//         window.history.pushState(null, null, url);
+//     }
+// })();
 
 
 /* =====================================================
