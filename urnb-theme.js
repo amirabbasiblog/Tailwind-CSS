@@ -17,51 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* =====================================================
-   Script Name: Download Button
-   Purpose: User Wait 10 seconds on Post
-===================================================== */
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    document.querySelectorAll(".novel-download-btn").forEach(btn => {
-
-        btn.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            let seconds = 10;
-            const textSpan = btn.querySelector(".btn-text");
-            const originalText = textSpan ? textSpan.innerText : "Download PDF";
-            const link = btn.href;
-
-            btn.style.pointerEvents = "none";
-
-            const interval = setInterval(() => {
-                if (textSpan) {
-                    textSpan.innerText = "Please wait " + seconds + "s...";
-                }
-                seconds--;
-
-                if (seconds < 0) {
-                    clearInterval(interval);
-                    window.location.replace(link);
-                }
-            }, 1000);
-        });
-
-    });
-
-});
-
-// Back button fix
-window.addEventListener("pageshow", function () {
-    document.querySelectorAll(".novel-download-btn").forEach(btn => {
-        const textSpan = btn.querySelector(".btn-text");
-        btn.style.pointerEvents = "auto";
-        if (textSpan) textSpan.innerText = "Download PDF";
-    });
-});
-
-/* =====================================================
    Script Name: Theia Sticky Sidebar
    Purpose: Sidebar ko scroll ke sath sticky banana
             taake widgets aur ads hamesha visible rahen
